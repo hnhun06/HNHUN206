@@ -1,153 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>簡潔版個人履歷 — 期中報告用</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人履歷</title>
   <style>
-    :root{--accent:#0b6efd;--muted:#6b7280;--card:#ffffff;--bg:#f3f4f6}
-    *{box-sizing:border-box}
-    body{font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', Arial; background:var(--bg); color:#111; margin:0; padding:24px}
-    .container{max-width:900px;margin:0 auto;background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));box-shadow:0 6px 18px rgba(15,23,42,0.08);border-radius:12px;overflow:hidden}
-    header{display:flex;gap:20px;padding:28px}
-    .photo{flex:0 0 140px;height:140px;border-radius:12px;overflow:hidden;background:#eee}
-    .photo img{width:100%;height:100%;object-fit:cover;display:block}
-    .intro{flex:1}
-    h1{margin:0;font-size:1.6rem}
-    p.role{margin:6px 0 0;color:var(--muted)}
-    .meta{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap;color:var(--muted);font-size:0.95rem}
-
-    main{display:grid;grid-template-columns:1fr 320px;gap:24px;padding:24px 28px 36px}
-    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 1px 0 rgba(0,0,0,0.03)}
-
-    h2{font-size:1.05rem;margin:0 0 10px}
-    ul{margin:0;padding-left:1.1rem}
-    li{margin-bottom:8px}
-    .muted{color:var(--muted);font-size:0.95rem}
-
-    .right .contact-list{display:flex;flex-direction:column;gap:8px}
-    .skill{display:flex;flex-wrap:wrap;gap:8px}
-    .tag{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:0.9rem}
-
-    footer{padding:18px 28px;border-top:1px dashed #e6e9ef;color:var(--muted);font-size:0.95rem;text-align:center}
-
-    @media (max-width:800px){main{grid-template-columns:1fr;}
-      header{flex-direction:column;align-items:center;text-align:center}
-      .photo{width:120px;height:120px}
-      .intro .meta{justify-content:center}
-      .right{order:2}
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+    .resume {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 720px;
+      padding: 40px;
+      margin: 40px 0;
+    }
+    h1 {
+      text-align: center;
+      color: #1f2937;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+    .photo {
+      flex: 0 0 160px;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e5e7eb;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .info {
+      flex: 1;
+    }
+    .info p {
+      margin: 6px 0;
+      font-size: 16px;
+      color: #374151;
+    }
+    h2 {
+      border-left: 6px solid #2563eb;
+      padding-left: 10px;
+      color: #1e40af;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #374151;
+      font-size: 16px;
+    }
+    li {
+      margin-bottom: 6px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header
-      <div class="photo card">
-        <!-- 將 photo.jpg 換成你的照片檔名即可 -->
-        <img src="Gemini_Generated_Image_3wav9u3wav9u3wav.png" alt="個人照片" />
+  <div class="resume">
+    <h1>個人履歷</h1>
+    <div class="profile">
+      <div class="photo">
+        <img src="Gemini_Generated_Image_3wav9u3wav9u3wav.png" alt="個人照片">
       </div>
-      <div class="intro">
-        <h1>李紅絨</h1>
-        <p class="role">學號：114011120</p>
-        <p class="role">健康管理系 一年級學生</p>
-        <div class="meta">
-          <div>出生日期：2006/02/07</div>
-          <div>居住：臺灣臺北市</div>
-          <div>電子郵件：nh3501335abcxyz@gmail.com</div>
-        </div>
+      <div class="info">
+        <p><strong>姓名：</strong>李紅絨</p>
+        <p><strong>出生日期：</strong>2006/02/07</p>
+        <p><strong>電子郵件：</strong>nh3501335abcxyz@gmail.com</p>
+        <p><strong>電話：</strong>0912-345-678</p>
+        <p><strong>地址：</strong>台灣台中市</p>
       </div>
-    </header>
+    </div>
 
-    <main>
-      <section>
-        <div class="card">
-          <h2>自我簡介</h2>
-          <p class="muted">我是來自越南的交換生，對健康管理與社區衛生有濃厚興趣。性格細心、適應力強，擅長跨文化溝通與團隊合作。</p>
-        </div>
+    <h2>學歷</h2>
+    <ul>
+      <li>越南高中畢業</li>
+      <li>目前就讀於台灣健康管理系</li>
+    </ul>
 
-        <div class="card" style="margin-top:16px">
-          <h2>學歷</h2>
-          <ul>
-            <li>
-              <strong>國立臺灣某大學</strong> — 健康管理系，學士在學中<br>
-              <span class="muted">2025 — 現在</span>
-            </li>
-            <li>
-              <strong>越南某高級中學</strong> — 普通科畢業<br>
-              <span class="muted">2022 — 2024</span>
-            </li>
-          </ul>
-        </div>
+    <h2>技能</h2>
+    <ul>
+      <li>中文及越南語流利</li>
+      <li>熟悉電腦文書處理 (Word、Excel、PowerPoint)</li>
+      <li>良好的溝通與協調能力</li>
+    </ul>
 
-        <div class="card" style="margin-top:16px">
-          <h2>相關經驗</h2>
-          <ul>
-            <li>
-              <strong>校內志工 — 健康宣導活動</strong><br>
-              <span class="muted">協助活動企劃與現場協調，負責發放宣傳資料與簡易量測流程。</span>
-            </li>
-            <li>
-              <strong>實習助理（暑期）</strong><br>
-              <span class="muted">參與基礎健康檢查流程、紀錄與資料整理。</span>
-            </li>
-          </ul>
-        </div>
+    <h2>興趣</h2>
+    <ul>
+      <li>烹飪</li>
+      <li>唱歌</li>
+      <li>旅遊</li>
+      <li>熱愛動物</li>
+      <li>具高度學習能力</li>
+    </ul>
 
-        <div class="card" style="margin-top:16px">
-          <h2>校內課程亮點</h2>
-          <ul>
-            <li>公共衛生導論</li>
-            <li>健康管理概論</li>
-            <li>基礎統計與研究方法</li>
-          </ul>
-        </div>
-
-      </section>
-
-      <aside class="right">
-        <div class="card contact-list">
-          <h2>聯絡資訊</h2>
-          <div class="muted">電話：+886 912 345 678</div>
-          <div class="muted">電子郵件：nh3501335abcxyz@gmail.com</div>
-          <div class="muted">LinkedIn / GitHub：可選填</div>
-        </div>
-
-        <div class="card" style="margin-top:16px">
-          <h2>技能</h2>
-          <div class="skill">
-            <span class="tag">溝通能力</span>
-            <span class="tag">資料整理</span>
-            <span class="tag">活動企劃</span>
-            <span class="tag">基礎統計</span>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:16px">
-          <h2>語言</h2>
-          <ul>
-            <li>越南語 — 母語</li>
-            <li>中文（繁體）— 中等（在學中）</li>
-            <li>英文 — 基礎會話</li>
-          </ul>
-        </div>
-
-        <div class="card" style="margin-top:16px">
-          <h2>興趣</h2>
-          <ul>
-            <li>烹飪（喜歡嘗試新食譜與創意料理）</li>
-            <li>唱歌與音樂</li>
-            <li>旅遊與探索文化</li>
-            <li>熱愛動物、富有同理心</li>
-            <li>具高度學習能力，喜歡挑戰新知識</li>
-          </ul>
-        </div>
-
-      </aside>
-    </main>
-
-    <footer>
-      此履歷範本為簡潔版，請自行更換照片與聯絡資料以符合期中作業要求。
-    </footer>
+    <h2>個人特質</h2>
+    <ul>
+      <li>樂觀積極，具有責任感</li>
+      <li>善於團隊合作</li>
+      <li>對新環境適應力強</li>
+    </ul>
   </div>
 </body>
 </html>
